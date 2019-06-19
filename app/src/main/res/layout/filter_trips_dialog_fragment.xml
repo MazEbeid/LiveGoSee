@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    style="@style/MyDialogTheme"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Filters"
+        android:textColor="@color/lgs_purple"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter by privacy"
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+            android:textColor="@color/lgs_pink"
+            android:layout_below="@id/title"
+        android:layout_marginTop="10dp"
+            android:id="@+id/title_ll1" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private"
+            android:id="@+id/private_checkbox"
+            android:textColor="@color/lgs_pink"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/title_ll1"
+            android:layout_marginTop="5dp"/>
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"
+            android:id="@+id/public_checkbox"
+            android:textColor="@color/lgs_pink"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/private_checkbox"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_ll2"
+            android:text="Filter by period"
+            android:textColor="@color/lgs_delete_pink"
+            android:layout_below="@+id/public_checkbox"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/to_layout"
+            android:layout_below="@+id/title_ll2"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/filter_from_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="From: "
+                android:textColor="@color/lgs_delete_pink"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+            <ImageButton
+                android:id="@+id/filte_from_date_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/calendar_icon" />
+
+
+
+
+            <TextView
+                android:id="@+id/filter_to_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="To: "
+                android:textColor="@color/lgs_delete_pink"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+            <ImageButton
+                android:id="@+id/filter_to_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/calendar_icon"
+                android:layout_gravity="center_vertical"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter by region"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/to_layout"
+            android:textColor="@color/material_red"
+            android:id="@+id/titlell3"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa"
+            android:id="@+id/africa_checkbox"
+            android:textColor="@color/material_red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/titlell3"
+            android:layout_marginTop="5dp"/>
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"
+            android:id="@+id/asia_checkbox"
+            android:textColor="@color/material_red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/africa_checkbox"
+            android:layout_marginTop="5dp"/>
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa"
+            android:id="@+id/europ_checkbox"
+            android:textColor="@color/material_red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/asia_checkbox"
+            android:layout_marginTop="5dp"/>
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americas"
+            android:id="@+id/americas_checkbox"
+            android:textColor="@color/material_red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/europ_checkbox"
+            android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Apply"
+        android:layout_below="@id/americas_checkbox"
+        android:textColor="@color/lgs_purple"
+        android:background="@color/lgs_yellow"
+        android:id="@+id/apply_filters_button"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/homefeed_scroll_view"
+    tools:context="mebeidcreations.apps.livegosee.HomeFeedFragment"
+    android:animateLayoutChanges="true">
+
+
+    <RelativeLayout
+        android:id="@+id/friends_expansion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/imageview_onecolor1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:id="@+id/title_l"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="FRIENDS' TRAVELS"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@+id/title_l"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/friends_desc"
+            android:text="Find friends and stalk them till they remove, report or block you, or maybe just follow your friends travels and get inspired or jealous its totally up to you."
+            android:textColor="@color/white"/>
+
+
+
+
+        <ImageButton
+            android:id="@+id/expand_friends_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/down_arrow_white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inspiration_expansion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/imageview_onecolor2"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/title_2"
+            android:text="GET INSPIRED"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@+id/title_2"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/inspiration_desc"
+            android:text="After your friends have completedly shunned you, you are now a lone wolf looking for new travel inspirations and adventures. Not that you need any inspiration you have already zeroed down on your next groupd of victims, but hey Please do get inspired :)"
+            android:textColor="@color/white"/>
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/expand_inspiration_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/down_arrow_white" />
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mytravels_expansion_layout"
+            android:background="@drawable/imageview_onecolor3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/title_3"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="MY TRAVELS"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_below="@+id/title_3"
+                android:id="@+id/my_travels_desc"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Hey come on, lets not kid ourselves. We all know why you are here, but just in case we have doubted you this section should contain all your travelling adventures or it might just be EMPTY its if you are here in the capacity of a stalker"
+                android:textColor="@color/white"/>
+
+
+            <ImageButton
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/expand_mytravels_button"
+                android:background="@drawable/down_arrow_white"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

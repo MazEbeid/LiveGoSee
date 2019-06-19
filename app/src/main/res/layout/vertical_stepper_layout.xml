@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/transportImage_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/walk_transport"
+        android:background="@drawable/pink_circle"/>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/transportImage_1"
+        android:background="@color/linen"
+        android:layout_marginLeft="33dp"
+        android:id="@+id/connector"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/transportImage_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:padding="5dp"
+        android:cropToPadding="true"
+        android:layout_below="@id/connector"
+        app:srcCompat="@drawable/aeroplane_transport"
+        android:background="@drawable/pink_circle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 FEB 2018"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/transportImage_1"
+        android:id="@+id/transport_detail_date"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23:00 Hrs"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/transportImage_1"
+        android:id="@+id/transport_detail_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="230dp"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+
+
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Ormsby Lodge, The Avenue, London W41 HS"
+         android:textColor="@color/white"
+         android:layout_toRightOf="@id/transportImage_1"
+         android:id="@+id/transport_detail_origin"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:textStyle="bold"
+         android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Little Egypt Lounge, Bloemfontain Road, London W92HU"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/transportImage_2"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/transport_detial_destination"
+        android:layout_marginTop="350dp"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 mins"
+        android:textColor="@color/white"
+        android:rotationY="-90"
+        android:id="@+id/transport_detail_duration"
+        android:layout_marginTop="230dp"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textColor="@color/white"
+        android:layout_below="@id/transport_detial_destination"
+        android:id="@+id/transport_detail_notes"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"/>
+
+
+
+</RelativeLayout>

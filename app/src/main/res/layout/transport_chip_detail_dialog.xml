@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent_black_hex_10">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/title_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/lgs_more_dialog_pink">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transport"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:id="@+id/title_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="EDIT"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/edit_button"/>
+
+    </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/transportImage_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:layout_below="@id/title_layout"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/walk_transport"
+            android:background="@drawable/pink_circle"/>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/transportImage_1"
+            android:background="@color/white"
+            android:id="@+id/connector"
+            android:layout_marginStart="28dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/transportImage_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:cropToPadding="true"
+            android:layout_below="@id/connector"
+            app:srcCompat="@drawable/aeroplane_transport"
+            android:background="@drawable/pink_circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23 FEB 2018"
+            android:textColor="@color/white"
+            android:layout_below="@id/transport_detail_origin"
+            android:layout_toEndOf="@id/transportImage_1"
+            android:id="@+id/transport_detail_date"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/transport_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transport_detail_date"
+            android:text="23:00 Hrs"
+            android:layout_marginStart="105dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Ormsby Lodge, The Avenue, London W41 HS"
+            android:textColor="@color/white"
+            android:layout_below="@id/title_layout"
+            android:layout_toEndOf="@id/transportImage_1"
+            android:id="@+id/transport_detail_origin"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Little Egypt Lounge, Bloemfontain Road, London W92HU"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/transportImage_2"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:id="@+id/transport_detail_destination"
+            android:layout_marginTop="260dp"
+            android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/transport_detail_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="2"
+        android:layout_marginStart="-50dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Notify me"
+    android:id="@+id/textnotes"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_below="@+id/transport_detail_destination"
+    android:layout_marginStart="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 mins"
+        android:layout_below="@id/transport_detail_destination"
+        android:layout_marginStart="5dp"
+        android:id="@+id/transport_notification_interval"
+        android:layout_toEndOf="@id/textnotes"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="before"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/transport_notification_interval"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/transport_detail_destination"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes:"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:id="@+id/notestitle"
+        android:layout_below="@+id/transport_notification_interval"
+        android:layout_marginLeft="5dp"
+
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:text="This is where notes for each transport is going to be displayed the user can press the edit button to edit the whole transport mode entry"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/notestitle"
+        android:id="@+id/transport_detail_notes"
+        android:textSize="14sp"/>
+
+
+
+
+
+</RelativeLayout>

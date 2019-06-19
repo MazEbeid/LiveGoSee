@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:id="@+id/create_account_layout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l1"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_username"
+                android:id="@+id/imageView2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edit_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/create_account_name_field"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:imeOptions="actionNext"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingRight="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:nextFocusDown="@+id/create_account_age_field"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l2"
+            android:layout_below="@+id/l1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_age">
+
+            </ImageView>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edit_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:id="@+id/create_account_age_field"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:inputType="date"
+                android:textSize="18dp"
+                android:imeOptions="actionNext"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingRight="10dp"
+                android:ems="10"
+                android:hint="Date of birth"
+
+                android:paddingLeft="2dp"/>
+
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l3"
+            android:layout_below="@+id/l2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_location"
+                android:id="@+id/imageView" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edit_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/create_account_country_field"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:imeOptions="actionNext"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingRight="10dp"
+                android:ems="10"
+                android:hint="Country"
+                android:paddingLeft="2dp"/>
+
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/l4"
+            android:layout_below="@id/l3">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_email">
+
+            </ImageView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edit_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/create_account_emailField"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:imeOptions="actionNext"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingRight="10dp"
+                android:ems="10"
+                android:hint="Email"
+
+                android:paddingLeft="2dp"/>/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l5"
+            android:layout_below="@id/l4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_password">
+
+            </ImageView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edit_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/create_account_password_field"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:textSize="18sp"/>
+
+            />
+        </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/l5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Create"
+            android:textStyle="bold"
+            android:textColor="@drawable/button_text_color"
+            android:background="@drawable/white_button"
+            android:id="@+id/create_account_button" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

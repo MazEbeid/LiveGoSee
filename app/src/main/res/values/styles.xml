@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lgs_purple</item>
+        <item name="colorPrimaryDark">@color/lgs_purple</item>
+        <item name="colorAccent">@color/lgs_yellow</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/lgs_purple</item>
+        <item name="colorControlActivated">@color/lgs_purple</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/lgs_purple</item>
+        <item name="android:textColorPrimary">@color/lgs_purple</item>
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+    </style>
+
+    <style name="MyAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/lgs_yellow</item>
+        <item name="android:title">@color/lgs_purple</item>
+        <item name="android:background">@color/transparent_white_hex_10</item>
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+
+    </style>
+
+
+    <style name="NewTripDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">@color/lgs_yellow</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListStyle</item>
+    </style>
+
+    <style name="DropDownListStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:dividerHeight">1dp</item>
+
+    </style>
+
+
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/lgs_privacy_toggle_text</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/white</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey</item>
+
+    </style>
+
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_more_question"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:text="Would you like to add more info to your trip?"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/add_more_question"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/yes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

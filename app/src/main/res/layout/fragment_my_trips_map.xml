@@ -1,0 +1,57 @@
+<FrameLayout
+    android:id="@+id/my_trips_map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout
+        android:id="@+id/my_trips_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    </FrameLayout>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/center_list_button"
+        android:id="@+id/show_trips_list_view"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_black_hex_5">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/map_back_arrow"
+            android:background="@drawable/back_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:id="@+id/title_3"
+            android:text="MY TRAIL"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:background="@drawable/trip_settings_button"
+        android:id="@+id/map_style_toggle"/>
+</FrameLayout>
+
+

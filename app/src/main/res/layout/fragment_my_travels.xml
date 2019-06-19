@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/my_travels_scroll_view"
+    tools:context="mebeidcreations.apps.livegosee.MyTravelsFragment"
+    android:background="@drawable/onecolor_03complete">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black_hex_5">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/title_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_black_hex_7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Travels"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:id="@+id/title_text"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/my_travels_fragments_container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:text="My travels main feed here you should be able to see your travel highlights upcoming trips or anything that you want to go on your travel feed
+
+
+
+  Use the bottom toolbar to add a new trip, view your trips and clisp"/>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_black_hex_5">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageButton
+                android:id="@+id/view_my_trips"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_trips_icon" />
+
+            <ImageButton
+                android:id="@+id/adD_new_trip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/add_event_icon" />
+
+
+            <ImageButton
+                android:id="@+id/view_my_clips"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/my_clips_icon" />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>

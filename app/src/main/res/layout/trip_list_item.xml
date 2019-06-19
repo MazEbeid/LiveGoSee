@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="320dp"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:id="@+id/trip_item_container"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/trip_list_item_background"
+    android:layout_marginBottom="5dp">
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_arrow"
+        android:visibility="invisible"
+        android:id="@+id/close_selected_trip_options"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/trip_list_item_thumbnail"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/no_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:text="EDIT"
+        android:visibility="invisible"
+        android:id="@+id/trip_edit_thumbnail_button"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/transparent_white_hex_10"
+        android:textSize="14dp"/>
+
+
+</RelativeLayout>
+
+
+    <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/trip_list_item_trip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vacation with my friends"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trip_list_item_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bucharest, Romania"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/trip_list_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="April 2017"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

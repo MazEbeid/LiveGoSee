@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:id="@+id/main_feed_fragment_toolbar"
+    android:background="@color/transparent_white_hex_10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/mytripslist_main_bottom_options">
+
+        <ImageButton
+            android:id="@+id/adD_new_trip"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/add_event_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mytrips_bottom_delete_options"
+        android:visibility="invisible">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/selected_trip_optionsLL"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/transparent_white_hex_5">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Select Trips"
+                android:id="@+id/number_of_selected_trips_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/close_mytrips_options"
+                android:background="@drawable/close_white_128"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/share_white_128"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+
+                    android:id="@+id/share_selected_trip_button" />
+                <ImageButton
+                    android:id="@+id/delete_selected_trips_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:background="@drawable/delete_white_128" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

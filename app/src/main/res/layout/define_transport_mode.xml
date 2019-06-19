@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:background="@drawable/black_edit_text"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/transport_origin_field"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/title_layout"
+        android:padding="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="| Origin/Start"
+        android:textSize="16dp" />
+
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/black_edit_text"
+        android:id="@+id/transport_destination_field"
+        android:imeOptions="actionDone"
+        android:layout_below="@id/transport_origin_field"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="| Destination"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:id="@+id/transport_date_layout"
+        android:layout_below="@id/transport_destination_field"
+        android:background="@drawable/black_edit_text"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Date: "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/transport_date_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/white_calendar" />
+
+        <TextView
+            android:id="@+id/transport_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:id="@+id/transport_notification_layout"
+        android:layout_below="@id/transport_time_layout"
+        android:background="@drawable/black_edit_text"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Notify me "
+            android:id="@+id/notify_me_text"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/transport_notification_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/notify_me_text"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bell_white"/>
+
+
+
+        <Spinner
+            android:id="@+id/transport_notification_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:dropDownVerticalOffset = "40dp"
+            android:overlapAnchor = "false"
+            />
+
+
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/transport_notify_me_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_110sdp"
+                android:checked="false"
+                android:layout_centerVertical="true"
+                android:shadowColor="@color/lgs_yellow" />
+
+            <TextView
+                android:id="@+id/notify_me_toggle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:layout_toRightOf="@+id/transport_notify_me_toggle"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:id="@+id/transport_time_layout"
+        android:layout_below="@id/transport_date_layout"
+        android:background="@drawable/black_edit_text"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Time: "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/transport_time_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/time_white" />
+
+        <TextView
+            android:id="@+id/transport_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/black_edit_text"
+        android:id="@+id/transport_description"
+        android:imeOptions="actionDone"
+        android:inputType="text|textMultiLine"
+        android:layout_below="@id/transport_notification_layout"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="|Notes"
+        android:textSize="16dp" />
+
+
+
+</RelativeLayout>

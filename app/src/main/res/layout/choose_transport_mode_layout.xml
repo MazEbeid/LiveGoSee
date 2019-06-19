@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/buttons_row_1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/walk_transport"
+                android:background="@drawable/walk_transport"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/bicycle_transport"
+                android:background="@drawable/cycle_transport"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/car_transport"
+                android:background="@drawable/drive_transport"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/cab_transport"
+                android:background="@drawable/hiredcar_transport"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/bus_transport"
+                android:background="@drawable/bus_transport"
+                android:layout_marginLeft="20dp"/>
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/bike_transport"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bike_transport"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttons_row_2"
+            android:id="@+id/buttons_row_3"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp">
+
+
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/seaplane_transport"
+                android:background="@drawable/seaplane_transport"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/plane_transport"
+                android:background="@drawable/aeroplane_transport"
+                android:layout_marginLeft="20dp"/>
+
+
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/chopper_transport"
+                android:background="@drawable/helicopter_transport"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/balloon_transport"
+                android:background="@drawable/airballoon_transport"
+                android:layout_marginLeft="20dp"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/sailboat_transport"
+                android:background="@drawable/sailboat_transport"
+                android:layout_marginLeft="20dp"/>
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/cruise_transport"
+                android:background="@drawable/cruiseship_transport"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons_row_3"
+        android:id="@+id/buttons_row_4"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/boat_transport"
+            android:background="@drawable/boat_transport" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons_row_1"
+        android:id="@+id/buttons_row_2"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/camper_transport"
+            android:background="@drawable/campervan_transport"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/train_transport"
+            android:background="@drawable/train_transport"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/underground_transport"
+            android:background="@drawable/underground_transport"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/tram_transport"
+            android:background="@drawable/metro_transport"
+            android:layout_marginLeft="20dp"/>
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cable_transport"
+            android:background="@drawable/cablecar_transport"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ferry_transport"
+            android:background="@drawable/ferry_transport"/>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Choose all transportaion modes you took to reach your destination"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_below="@id/buttons_row_4"
+        android:layout_marginTop="20dp"
+        android:id="@+id/number_of_transport_modes_added"
+        android:layout_centerHorizontal="true"/>
+
+
+    <HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/chips_horizontal_scroll"
+    android:layout_below="@id/number_of_transport_modes_added">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/number_of_transport_modes_added"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:id="@+id/chips_container">
+
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>
+
+    
+
+    </RelativeLayout>
+
+
